@@ -11,7 +11,7 @@ public class QueueStackTester {
 if( i > x ){
                  T temp = q.serve();
 
-       if(i % 2 != 0 || x){
+       if(i % 2 != 0){
            oq.enqueue(temp);
          }
             else{
