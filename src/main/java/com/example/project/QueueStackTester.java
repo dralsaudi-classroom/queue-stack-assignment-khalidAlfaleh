@@ -7,12 +7,12 @@ public class QueueStackTester {
         int x = q.length();
         for(int i =1; i<=x; i++){
          if(i % 2 != 0){
-             t temp = q.serve();
+             T temp = q.serve();
              oq.enqueue(temp);
              q.enqueue(temp);
          }
             else{
-                 t temp2 = q.serve();
+                 T temp2 = q.serve();
              eq.enqueue(temp2);
              q.enqueue(temp2);
             }
