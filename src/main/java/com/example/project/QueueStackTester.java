@@ -5,7 +5,7 @@ public class QueueStackTester {
     {
 
         int x = q.length();
-        for(int i =1; i<=x; ++){
+        for(int i =1; i<=x; i++){
          if(i % 2 != 0){
              t temp = q.serve();
              oq.enqueue(temp);
