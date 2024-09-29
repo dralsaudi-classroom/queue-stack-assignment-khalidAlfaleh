@@ -85,7 +85,7 @@ public class QueueStackTester {
             int j = 0;
             int i =0;
             int size = 0;
-        return rec(st, e, j, i, size);
+        return rec(st, e, j, i, size, y);
     }
     public static <T> boolean rec(Stack<T> st, T e, int j, int i, int size, T y ){
         
