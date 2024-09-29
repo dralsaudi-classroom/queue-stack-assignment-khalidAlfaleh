@@ -87,9 +87,8 @@ public class QueueStackTester {
         search(st, e);
             st.push(x);
         }
-        else
+    
             return false;
-        
     }
    
        
