@@ -85,8 +85,8 @@ public class QueueStackTester {
         if(x == e)
             return true;
         search(st, e);
-        st.push(x);
         }
+        st.push(x);
         return false;
     }
    
