@@ -79,12 +79,16 @@ public class QueueStackTester {
     }
     public static <T> boolean search(Stack<T> st, T e)
     {
+        if(st.empty());
+        return false;
+        
          int j = 0;;
             int i =0;
             int size = 0;
         return rec(st, e, j, i, size);
     }
     public static <T> boolean rec(Stack<T> st, T e, int j, int i, int size ){
+        
            T y = null;
             T x = st.pop();
             st.push(x);
@@ -97,8 +101,7 @@ public class QueueStackTester {
 
             if(x == y)
                 i++;
-
-
+        
             if(i < 2)
             size++;
 
@@ -111,8 +114,6 @@ public class QueueStackTester {
             return false;
         }
         rec(st, e, j, i, size);
-        return true;
-
         }
        
 
