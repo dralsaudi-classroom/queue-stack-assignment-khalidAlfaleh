@@ -17,7 +17,7 @@ public class QueueStackTester {
         re(q, oq, eq, x, i);
     }
          public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int i){
-             if(  1 == x +1 )
+             if(  i == x +1 )
                  return; 
              
          T temp = q.serve();
