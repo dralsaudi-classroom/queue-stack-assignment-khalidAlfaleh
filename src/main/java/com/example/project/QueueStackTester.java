@@ -11,7 +11,7 @@ public class QueueStackTester {
             int x = q.length();
         if(x != 0){
             
-            if(i % 2 != 0){
+            if(x % 2 != 0){
              T temp = temp1.serve();
              temp2.enqueue(temp);
              temp1.enqueue(temp);
@@ -21,6 +21,7 @@ public class QueueStackTester {
              temp3.enqueue(temp0);
              temp1.enqueue(temp0);
             }
+            x--;
             split(temp1, temp2, temp3);
         }
         else 
