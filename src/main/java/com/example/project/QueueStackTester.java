@@ -4,11 +4,19 @@ public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
         int x = q.length();
+        if(x % 2 == 0){
+            x = x+1;
+            z = 1;
+        }
+        else 
+            z = 0;
+
+        
         re(q, oq, eq, x);
     }
-         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
-             int i = x;
-             if( i != 0 ){
+         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int z){
+
+             if( i != z ){
                  T temp = q.serve();
                  
        if(i % 2 != 0)
