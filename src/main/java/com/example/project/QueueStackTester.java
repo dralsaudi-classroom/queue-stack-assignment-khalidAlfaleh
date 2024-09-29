@@ -79,7 +79,7 @@ public class QueueStackTester {
     }
     public static <T> boolean search(Stack<T> st, T e)
     {
-        if((st.empty())
+        if(st.empty())
            return flase;
         
         boolean flag;
