@@ -71,7 +71,7 @@ public class QueueStackTester {
         
 
         
-        //throw new UnsupportedOperationException("Not supported yet.");
+        throw new UnsupportedOperationException("Not supported yet.");
         // Write a static method remove that removes every element in the priority queue
         // having priority less than p.
         // Example. Given pq: [A, 10], [D, 8], [B, 5], [E, 3], [C, 2] remove(pq, 5) results in
