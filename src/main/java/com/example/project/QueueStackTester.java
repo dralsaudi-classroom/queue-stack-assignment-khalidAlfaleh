@@ -82,9 +82,37 @@ public class QueueStackTester {
          int j = 0;;
             int i =0;
             int size = 0;
-       // return rec(st, e, j, i, size);
-        return false;
+        return rec(st, e, j, i, size);
     }
+    public static <T> boolean rec(Stack<T> st, T e, int j, int i, int size ){
+           T y = null;
+            T x = st.pop();
+            st.push(x);
+                if(j == 0){
+                y = x;
+               j++;
+                }
+            if(x == e)
+           return true;
+
+            if(x == y)
+                i++;
+
+
+            if(i < 2)
+            size++;
+
+        if(i == 2){
+            while(size -1 != 0){
+             T r =   st.pop();
+                st.push(r);
+                size--;
+            }
+            return false;
+        }
+        rec(st, e, j, i, size);
+
+        }
        
 
 
