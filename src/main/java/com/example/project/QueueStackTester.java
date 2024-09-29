@@ -82,9 +82,8 @@ public class QueueStackTester {
         T x = st.pop();
         if(x == e)
             return true;
-        st.push(x);
-
         search(st, e);
+        st.push(x);
     }
    
        
