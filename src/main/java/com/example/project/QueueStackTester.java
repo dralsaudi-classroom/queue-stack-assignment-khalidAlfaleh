@@ -113,7 +113,7 @@ public class QueueStackTester {
             }
             return false;
         }
-       return rec(st, e, j, i, size);
+       return rec(st, e, j, i, size, y);
         }
        
 
