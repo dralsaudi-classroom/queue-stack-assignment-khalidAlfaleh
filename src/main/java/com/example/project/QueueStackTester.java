@@ -3,33 +3,33 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        int x = q.length();
-        int z = 0;
-        if(x % 2 == 0){
-            x = x+1;
-            z = 1;
-        }
-        else 
-            z = 0;
+       int x = q.length();
+        int i = 1;
+        //int z = 0;
+        //if(x % 2 == 0){
+          //  x = x+1;
+            //z = 1;
+       /// }
+        //else 
+          //  z = 0;
 
         
-        re(q, oq, eq, x, z);
+        re(q, oq, eq, x, i);
     }
-         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int z){
-
-             if( x != z ){
-                 T temp = q.serve();
-                 
+         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int i){
+             if(  1 == x +1 )
+                 return; 
+             
+         T temp = q.serve();
        if(x % 2 != 0)
            oq.enqueue(temp);
          else
            eq.enqueue(temp);
-            
+        
                  q.enqueue(temp);
-             
              x--;
-    re(q, oq, eq, x, z);
-}
+    re(q, oq, eq, x);
+
                
          
 
