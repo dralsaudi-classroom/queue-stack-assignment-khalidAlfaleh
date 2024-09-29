@@ -4,6 +4,7 @@ public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
         int x = q.length();
+        int z = 0;
         if(x % 2 == 0){
             x = x+1;
             z = 1;
