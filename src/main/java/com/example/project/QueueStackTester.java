@@ -81,15 +81,15 @@ public class QueueStackTester {
     {
         if(st.empty())
         return false;
-        
+        T y = null;
             int j = 0;
             int i =0;
             int size = 0;
         return rec(st, e, j, i, size);
     }
-    public static <T> boolean rec(Stack<T> st, T e, int j, int i, int size ){
+    public static <T> boolean rec(Stack<T> st, T e, int j, int i, int size, T y ){
         
-           T y = null;
+            = null;
             T x = st.pop();
                 if(j == 0){
                 y = x;
