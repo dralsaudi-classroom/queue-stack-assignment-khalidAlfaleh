@@ -106,7 +106,7 @@ public class QueueStackTester {
             size++;
 
         if(i == 2){
-            while(size -1 != 0){
+            while(size != 0){
              T r = st.pop();
                 st.push(r);
                 size--;
