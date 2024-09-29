@@ -12,14 +12,14 @@ public class QueueStackTester {
         if(x != 0){
             
             if(i % 2 != 0){
-             T temp = q.serve();
-             oq.enqueue(temp);
-             q.enqueue(temp);
+             T temp = tqmp1.serve();
+             temp2.enqueue(temp);
+             temp1.enqueue(temp);
          }
             else{
-                 T temp2 = q.serve();
-             eq.enqueue(temp2);
-             q.enqueue(temp2);
+                 T temp0 = q.serve();
+             temp3.enqueue(temp0);
+             temp1.enqueue(temp0);
             }
             split(temp1, temp2, temp3);
         }
