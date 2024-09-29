@@ -12,11 +12,11 @@ public class QueueStackTester {
             z = 0;
 
         
-        re(q, oq, eq, x);
+        re(q, oq, eq, x, z);
     }
          public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int z){
 
-             if( i != z ){
+             if( x != z ){
                  T temp = q.serve();
                  
        if(i % 2 != 0)
@@ -26,8 +26,8 @@ public class QueueStackTester {
             
                  q.enqueue(temp);
              
-             i--;
-    re(q, oq, eq, i);
+             x--;
+    re(q, oq, eq, x, z);
 }
                
          
