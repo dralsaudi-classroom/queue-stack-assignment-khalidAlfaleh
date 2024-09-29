@@ -86,10 +86,10 @@ public class QueueStackTester {
         T x = st.pop();
         if(x.equals(e))
             flag = true;
-            
+            else
+            flag = search(st, e);
              st.push(x);
-        search(st, e);
-return flag;        
+            return flag;        
     }
    
        
