@@ -79,7 +79,7 @@ public class QueueStackTester {
     }
     public static <T> boolean search(Stack<T> st, T e)
     {
-        if(st.empty());
+        if(st.empty())
         return false;
         
             int j = 0;
@@ -107,7 +107,7 @@ public class QueueStackTester {
 
         if(i == 2){
             while(size -1 != 0){
-             T r =   st.pop();
+             T r = st.pop();
                 st.push(r);
                 size--;
             }
