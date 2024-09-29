@@ -91,11 +91,12 @@ public class QueueStackTester {
         
            T y = null;
             T x = st.pop();
-            st.push(x);
                 if(j == 0){
                 y = x;
                j++;
                 }
+                    st.push(x);
+
             if(x == e)
            return true;
 
