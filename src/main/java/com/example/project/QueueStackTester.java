@@ -3,7 +3,24 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+
+        int x = q.length();
+        for(int i =1; i<=x; ++){
+         if(i % 2 != 0){
+             t temp = q.serve();
+             oq.enqueue(temp);
+             q.enqueue(temp);
+         }
+            else{
+                 t temp2 = q.serve();
+             eq.enqueue(temp2);
+             q.enqueue(temp2);
+            }
+             
+
+            
+        }
+        //throw new UnsupportedOperationException("Not supported yet.");
         // Write the recursive static method split that splits a queue of n elements into two
         // queues. The elements with odd orders (i.e. 1st, 3rd, 5th ...) should be put in the
         // first queue and elements with even orders (i.e. 2nd, 4th, 6th ...) should be put in
