@@ -89,7 +89,6 @@ public class QueueStackTester {
     }
     public static <T> boolean rec(Stack<T> st, T e, int j, int i, int size, T y ){
         
-            = null;
             T x = st.pop();
                 if(j == 0){
                 y = x;
