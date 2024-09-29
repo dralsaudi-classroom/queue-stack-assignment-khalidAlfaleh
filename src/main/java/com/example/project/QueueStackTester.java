@@ -79,17 +79,17 @@ public class QueueStackTester {
     }
     public static <T> boolean search(Stack<T> st, T e)
     {
-        boolean flag = false;
-        if(!(st.empty())){
+        if((st.empty())
+           return flase;
+        
+        boolean flag;
         T x = st.pop();
-        if(x == e){
-             st.push(x);
+        if(x.equals(e))
             flag = true;
-        }
+            
+             st.push(x);
         search(st, e);
-            st.push(x);
-        }
-            return flag;
+return flag;        
     }
    
        
