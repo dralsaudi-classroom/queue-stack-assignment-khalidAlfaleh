@@ -3,30 +3,28 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        LinkedQueue<T> temp1 = q;
-        LinkedQueue<T> temp2 = oq;
-       LinkedQueue<T> temp3 = eq;
-
-
-
-            int x = q.length();
-        if(x != 0){
-            
-            if(x % 2 != 0){
-             T temp = temp1.serve();
-             temp2.enqueue(temp);
-             temp1.enqueue(temp);
+        int x = q.length();
+        re(q, oq, eq, x);
+    }
+         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
+if( x != 0 ){
+       if(x % 2 != 0){
+             T temp = q.serve();
+             oq.enqueue(temp);
+             q.enqueue(temp);
          }
             else{
-                 T temp0 = q.serve();
-             temp3.enqueue(temp0);
-             temp1.enqueue(temp0);
+                 T temp2 = q.serve();
+             eq.enqueue(temp2);
+             q.enqueue(temp2);
             }
-            x--;
-            split(temp1, temp2, temp3);
-        }
-        else 
-            return;
+x--:
+    re(q, oq, eq, x);
+}
+         }
+
+
+        
              //if(i % 2 != 0){
            //  T temp = q.serve();
              //oq.enqueue(temp);
