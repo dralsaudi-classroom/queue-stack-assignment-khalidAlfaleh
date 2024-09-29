@@ -18,7 +18,7 @@ if( x != 0 ){
              eq.enqueue(temp2);
              q.enqueue(temp2);
             }
-x--:
+x--;
     re(q, oq, eq, x);
 }
          
