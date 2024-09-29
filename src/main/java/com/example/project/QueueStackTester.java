@@ -3,9 +3,10 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        LinkedQueue<T> temp1 = new LinkedQueue<T>(q);
-        LinkedQueue<T> temp2 = new LinkedQueue<T>(oq);
-       LinkedQueue<T> temp3 = new LinkedQueue<T>(eq);
+        LinkedQueue<T> temp1 = q;
+        LinkedQueue<T> temp2 = oq;
+       LinkedQueue<T> temp3 = eq;
+
 
 
             int x = q.length();
