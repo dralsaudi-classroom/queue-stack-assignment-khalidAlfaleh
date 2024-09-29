@@ -3,6 +3,10 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
+        Queue<T> temp1 = new Queue<T>(q);
+        Queue<T> temp2 = new Queue<T>(oq);
+        Queue<T> temp3 = new Queue<T>(eq);
+
 
             int x = q.length();
         if(x != 0){
@@ -17,7 +21,7 @@ public class QueueStackTester {
              eq.enqueue(temp2);
              q.enqueue(temp2);
             }
-            split(Queue<T> q, Queue<T> oq, Queue<T> eq);
+            split(temp1, temp2, temp3);
         }
         else 
             return;
