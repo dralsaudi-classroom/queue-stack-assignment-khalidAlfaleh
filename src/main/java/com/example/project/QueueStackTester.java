@@ -6,7 +6,7 @@ public class QueueStackTester {
         int x = q.length();
         re(q, oq, eq, x);
     }
-         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
+         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x + 1){
 if( x != 0 ){
                  T temp = q.serve();
 
