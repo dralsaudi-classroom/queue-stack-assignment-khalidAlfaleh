@@ -19,7 +19,7 @@ public class QueueStackTester {
              if( x != z ){
                  T temp = q.serve();
                  
-       if(i % 2 != 0)
+       if(x % 2 != 0)
            oq.enqueue(temp);
          else
            eq.enqueue(temp);
