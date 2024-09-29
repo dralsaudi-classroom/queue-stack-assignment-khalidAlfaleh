@@ -84,7 +84,7 @@ public class QueueStackTester {
             return true;
         st.push(x);
 
-        search(Stack<T> st, T e);
+        search(st, e);
     }
    
        
