@@ -82,7 +82,7 @@ public class QueueStackTester {
         if(st.empty());
         return false;
         
-         int j = 0;;
+            int j = 0;
             int i =0;
             int size = 0;
         return rec(st, e, j, i, size);
@@ -113,7 +113,7 @@ public class QueueStackTester {
             }
             return false;
         }
-        rec(st, e, j, i, size);
+       return rec(st, e, j, i, size);
         }
        
 
