@@ -80,7 +80,7 @@ public class QueueStackTester {
     public static <T> boolean search(Stack<T> st, T e)
     {
         if(st.empty())
-           return flase;
+           return false;
         
         boolean flag;
         T x = st.pop();
