@@ -3,14 +3,15 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        int x = q.length() + 1;
+        int x = q.length();
         re(q, oq, eq, x);
     }
          public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
-if( x != 0 ){
+             int i =1;
+if( i > x ){
                  T temp = q.serve();
 
-       if(x % 2 != 0){
+       if(i % 2 != 0 || x){
            oq.enqueue(temp);
          }
             else{
@@ -18,7 +19,7 @@ if( x != 0 ){
             }
                  q.enqueue(temp);
 
-x--;
+i++;
     re(q, oq, eq, x);
 }
          
