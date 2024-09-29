@@ -7,19 +7,21 @@ public class QueueStackTester {
         re(q, oq, eq, x);
     }
          public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
-             int i =1;
-if( x != 0 ){
+             int i = x;
+             if( i != 0 ){
                  T temp = q.serve();
-       if(x % 2 != 0)
+                 
+       if(i % 2 != 0)
            oq.enqueue(temp);
          else
            eq.enqueue(temp);
             
                  q.enqueue(temp);
              
-             x--;
-    re(q, oq, eq, x);
+             i--;
+    re(q, oq, eq, i);
 }
+               
          
 
 
