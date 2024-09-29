@@ -14,7 +14,6 @@ if( x != 0 ){
            oq.enqueue(temp);
          }
             else{
-                 T temp2 = q.serve();
              eq.enqueue(temp);
             }
                  q.enqueue(temp);
