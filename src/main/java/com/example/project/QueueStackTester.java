@@ -27,7 +27,7 @@ public class QueueStackTester {
            eq.enqueue(temp);
         
                  q.enqueue(temp);
-             x--;
+             i++;
     re(q, oq, eq, x, i);
 
                
