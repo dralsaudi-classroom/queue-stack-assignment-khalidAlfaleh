@@ -3,10 +3,10 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        int x = q.length();
+        int x = q.length() + 1;
         re(q, oq, eq, x);
     }
-         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x + 1){
+         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
 if( x != 0 ){
                  T temp = q.serve();
 
