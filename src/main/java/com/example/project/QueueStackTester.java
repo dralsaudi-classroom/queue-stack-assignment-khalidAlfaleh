@@ -8,16 +8,17 @@ public class QueueStackTester {
     }
          public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x){
 if( x != 0 ){
+                 T temp = q.serve();
+
        if(x % 2 != 0){
-             T temp = q.serve();
-             oq.enqueue(temp);
-             q.enqueue(temp);
+           oq.enqueue(temp);
          }
             else{
                  T temp2 = q.serve();
-             eq.enqueue(temp2);
-             q.enqueue(temp2);
+             eq.enqueue(temp);
             }
+                 q.enqueue(temp);
+
 x--;
     re(q, oq, eq, x);
 }
