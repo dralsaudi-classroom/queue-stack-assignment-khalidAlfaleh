@@ -6,6 +6,7 @@ public class QueueStackTester {
 
             int x = q.length();
         if(x != 0){
+            
             if(i % 2 != 0){
              T temp = q.serve();
              oq.enqueue(temp);
@@ -42,7 +43,7 @@ public class QueueStackTester {
              
 
             
-        }
+        
         //throw new UnsupportedOperationException("Not supported yet.");
         // Write the recursive static method split that splits a queue of n elements into two
         // queues. The elements with odd orders (i.e. 1st, 3rd, 5th ...) should be put in the
