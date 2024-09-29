@@ -12,7 +12,7 @@ public class QueueStackTester {
         if(x != 0){
             
             if(i % 2 != 0){
-             T temp = tqmp1.serve();
+             T temp = temp1.serve();
              temp2.enqueue(temp);
              temp1.enqueue(temp);
          }
