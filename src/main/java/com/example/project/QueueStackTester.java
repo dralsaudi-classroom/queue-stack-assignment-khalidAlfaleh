@@ -79,6 +79,9 @@ public class QueueStackTester {
     }
     public static <T> boolean search(Stack<T> st, T e)
     {
+        if(st.empty())
+            return false;
+        
         T x = st.pop();
         if(x == e)
             return true;
