@@ -5,15 +5,6 @@ public class QueueStackTester {
     {
        int x = q.length();
         int i = 1;
-        //int z = 0;
-        //if(x % 2 == 0){
-          //  x = x+1;
-            //z = 1;
-       /// }
-        //else 
-          //  z = 0;
-
-        
         re(q, oq, eq, x, i);
     }
          public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int i){
@@ -30,34 +21,6 @@ public class QueueStackTester {
              i++;
     re(q, oq, eq, x, i);
 
-               
-         
-
-
-        
-             //if(i % 2 != 0){
-           //  T temp = q.serve();
-             //oq.enqueue(temp);
-             //q.enqueue(temp);
-         //}
-
-        
-        //int x = q.length();
-        //for(int i =1; i<=x; i++){
-         //if(i % 2 != 0){
-           //  T temp = q.serve();
-             //oq.enqueue(temp);
-             //q.enqueue(temp);
-         //}
-           // else{
-             //    T temp2 = q.serve();
-             //eq.enqueue(temp2);
-             //q.enqueue(temp2);
-            //}
-             
-
-            
-        
         //throw new UnsupportedOperationException("Not supported yet.");
         // Write the recursive static method split that splits a queue of n elements into two
         // queues. The elements with odd orders (i.e. 1st, 3rd, 5th ...) should be put in the
@@ -68,10 +31,13 @@ public class QueueStackTester {
     }
     public static <T> void remove(LinkedPQ<T> pq, int p)
     {
+        PQNode<T> x = new PQNode<T>(pq.serve())
+            
+
         
 
         
-        throw new UnsupportedOperationException("Not supported yet.");
+        //throw new UnsupportedOperationException("Not supported yet.");
         // Write a static method remove that removes every element in the priority queue
         // having priority less than p.
         // Example. Given pq: [A, 10], [D, 8], [B, 5], [E, 3], [C, 2] remove(pq, 5) results in
