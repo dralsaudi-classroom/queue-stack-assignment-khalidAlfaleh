@@ -38,9 +38,7 @@ public class QueueStackTester {
             int e = x.p;
             if(!(e == p))
             pq.enqueue(x.data , x.p);
-            else
-                
-
+            
             i--;
         }
         
