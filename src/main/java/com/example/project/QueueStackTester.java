@@ -35,7 +35,7 @@ public class QueueStackTester {
         int i = pq.leangth;
         while( i > 0){
         x = pq.serve();
-            if(!(x.priority == p))
+            if(!(x.p == p))
             pq.enqueue(x);
 
             i--;
