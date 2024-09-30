@@ -31,10 +31,10 @@ public class QueueStackTester {
     }
     public static <T> void remove(LinkedPQ<T> pq, int p)
     {
-         PQNode<T> x;
+         PQElement<T> x;
         int i = pq.leangth;
         while( i > 0){
-        x = new PQNode<T>(pq.serve());
+        x = pq.serve();
             if(!(x.priority == p))
             pq.enqueue(x);
 
