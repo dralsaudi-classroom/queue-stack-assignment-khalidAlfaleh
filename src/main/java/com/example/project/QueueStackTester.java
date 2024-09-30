@@ -32,7 +32,7 @@ public class QueueStackTester {
     public static <T> void remove(LinkedPQ<T> pq, int p)
     {
          PQElement<T> x;
-        int i = pq.leangth;
+        int i = pq.leangth();
         while( i > 0){
         x = pq.serve();
             if(!(x.p == p))
