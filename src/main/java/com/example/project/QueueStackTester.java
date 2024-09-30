@@ -33,7 +33,7 @@ public class QueueStackTester {
     {
          PQElement<T> x;
         int i = pq.length();
-        while( i != 0){
+        while( i > 0){
         x = pq.serve();
             int e = x.p;
             if(e >= p)
