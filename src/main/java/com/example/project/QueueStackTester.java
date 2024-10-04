@@ -31,7 +31,7 @@ public class QueueStackTester {
     }
     public static <T> void remove(LinkedPQ<T> pq, int p)
     {
-        linkedPQ<T> temp = new LinkedPQ();
+        LinkedPQ<T> temp = new LinkedPQ();
          PQElement<T> x;
         int i = pq.length();
         while( i > 0){
