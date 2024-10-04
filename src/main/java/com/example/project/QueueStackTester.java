@@ -3,7 +3,25 @@ package com.example.project;
 public class QueueStackTester {
     public static <T> void split(Queue<T> q, Queue<T> oq, Queue<T> eq)
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+       int x = q.length();
+        int i = 1;
+        re(q, oq, eq, x, i);
+    }
+         public static <T> void re(Queue<T> q, Queue<T> oq, Queue<T> eq, int x, int i){
+             if(  i == x +1 )
+                 return; 
+             
+         T temp = q.serve();
+       if(i % 2 != 0)
+           oq.enqueue(temp);
+         else
+           eq.enqueue(temp);
+        
+                 q.enqueue(temp);
+             i++;
+    re(q, oq, eq, x, i);
+
+        //throw new UnsupportedOperationException("Not supported yet.");
         // Write the recursive static method split that splits a queue of n elements into two
         // queues. The elements with odd orders (i.e. 1st, 3rd, 5th ...) should be put in the
         // first queue and elements with even orders (i.e. 2nd, 4th, 6th ...) should be put in
@@ -13,7 +31,27 @@ public class QueueStackTester {
     }
     public static <T> void remove(LinkedPQ<T> pq, int p)
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+        LinkedPQ<T> temp = new LinkedPQ();
+         PQElement<T> x;
+        int i = pq.length();
+        while( i > 0){
+        x = pq.serve();
+            int e = x.p;
+            if(e >= p){
+            temp.enqueue(x.data , x.p);
+            }
+            i--;
+        }
+        int y = temp.length();
+        while(y > 0){
+            x = temp.serve();
+            pq.enqueue(x.data , x.p);
+            y--;
+        }
+        
+
+        
+        //throw new UnsupportedOperationException("Not supported yet.");
         // Write a static method remove that removes every element in the priority queue
         // having priority less than p.
         // Example. Given pq: [A, 10], [D, 8], [B, 5], [E, 3], [C, 2] remove(pq, 5) results in
@@ -21,11 +59,28 @@ public class QueueStackTester {
     }
     public static <T> boolean search(Stack<T> st, T e)
     {
-        throw new UnsupportedOperationException("Not supported yet.");
+        if(st.empty())
+           return false;
+        
+        boolean flag;
+        T x = st.pop();
+        if(x.equals(e))
+            flag = true;
+            else
+            flag = search(st, e);
+             st.push(x);
+            return flag;        
+    }
+   
+       
+
+
+        
+        //throw new UnsupportedOperationException("Not supported yet.");
         // Write the recursive static method search that searches for an element e in a stack st
         // and returns true if it’s found or false otherwise. st should not change at the end of
         // the method. You are not allowed to use any auxiliary data structures.
         // Example. Given the stack st (top-to-bottom): 5, 7, 5, 3, 2. search(st, 3) returns
         // true while search(st, 1) returns false.
-    }
+    
 }
