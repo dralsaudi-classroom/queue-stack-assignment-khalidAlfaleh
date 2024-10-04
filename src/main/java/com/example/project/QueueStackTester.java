@@ -45,7 +45,8 @@ public class QueueStackTester {
         int y = temp.length();
         while(y > 0){
             x = temp.serve();
-            pq.enqueue(x;)
+            pq.enqueue(x);
+            y--;
         }
         
 
