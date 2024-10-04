@@ -31,15 +31,21 @@ public class QueueStackTester {
     }
     public static <T> void remove(LinkedPQ<T> pq, int p)
     {
+        linkedPQ<T> temp = new LinkedPQ();
          PQElement<T> x;
         int i = pq.length();
         while( i > 0){
         x = pq.serve();
             int e = x.p;
             if(e >= p){
-            pq.enqueue(x.data , x.p);
+            temp.enqueue(x.data , x.p);
             }
             i--;
+        }
+        int y = temp.length();
+        while(y > 0){
+            x = temp.serve();
+            pq.enqueue(x;)
         }
         
 
