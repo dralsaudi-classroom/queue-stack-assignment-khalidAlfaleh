@@ -36,9 +36,9 @@ public class QueueStackTester {
         while( i > 0){
         x = pq.serve();
             int e = x.p;
-            if(e >= p)
+            if(e >= p){
             pq.enqueue(x.data , x.p);
-            
+            }
             i--;
         }
         
